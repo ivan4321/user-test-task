@@ -10,5 +10,5 @@ import java.util.List;
 public interface UserApi {
 
     @GetMapping(value = "/users")
-    List<User> getUsers();
+    List<User> getUsers(UserFilter userFilter);
 }

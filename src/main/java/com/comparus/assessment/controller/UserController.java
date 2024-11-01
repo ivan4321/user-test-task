@@ -1,6 +1,7 @@
 package com.comparus.assessment.controller;
 
 import com.comparus.assessment.api.UserApi;
+import com.comparus.assessment.api.UserFilter;
 import com.comparus.assessment.configuration.DatasourceProperties;
 import com.comparus.assessment.model.User;
 import com.comparus.assessment.repository.UserRepository;
@@ -18,7 +19,7 @@ public class UserController implements UserApi {
     private final UserService userService;
 
     @Override
-    public List<User> getUsers() {
-       return userService.getUsers();
+    public List<User> getUsers(UserFilter userFilter) {
+       return userService.getUsers(userFilter);
     }
 }

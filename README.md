@@ -7,8 +7,7 @@ This is a simple REST API built with Spring Boot for user reading.
 
 - Retrieve a list of all users
 - Retrieve and aggregate user data from multiple databases
-
-[//]: # (- Filtering may be used)
+- Filtering may be used
 
 
 ## Installation and Run
