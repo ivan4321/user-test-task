@@ -16,8 +16,8 @@ This is a simple REST API built with Spring Boot for user reading.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/user-management-api.git
-   cd user-management-api
+   git clone https://github.com/ivan4321/user-test-task
+   cd user-test-task
    ```
 
 2. Build and run the application using Maven:
