@@ -1,0 +1,63 @@
+CREATE TABLE users(
+                      user_id SERIAL primary key,
+                      login varchar(50),
+                      first_name varchar(100),
+                      last_name varchar(100));
+
+INSERT INTO users (login, first_name, last_name)
+VALUES
+    ('pg-1-user1', 'pg-1-Name1', 'pg-1-Surname1'),
+    ('pg-1-user2', 'pg-1-Name2', 'pg-1-Surname2'),
+    ('pg-1-user3', 'pg-1-Name3', 'pg-1-Surname3'),
+    ('pg-1-user4', 'pg-1-Name4', 'pg-1-Surname4'),
+    ('pg-1-user5', 'pg-1-Name5', 'pg-1-Surname5'),
+    ('pg-1-user6', 'pg-1-Name6', 'pg-1-Surname6'),
+    ('pg-1-user7', 'pg-1-Name7', 'pg-1-Surname7'),
+    ('pg-1-user8', 'pg-1-Name8', 'pg-1-Surname8'),
+    ('pg-1-user9', 'pg-1-Name9', 'pg-1-Surname9'),
+    ('pg-1-user10', 'pg-1-Name10', 'pg-1-Surname10'),
+    ('pg-1-user11', 'pg-1-Name11', 'pg-1-Surname11'),
+    ('pg-1-user12', 'pg-1-Name12', 'pg-1-Surname12'),
+    ('pg-1-user13', 'pg-1-Name13', 'pg-1-Surname13'),
+    ('pg-1-user14', 'pg-1-Name14', 'pg-1-Surname14'),
+    ('pg-1-user15', 'pg-1-Name15', 'pg-1-Surname15'),
+    ('pg-1-user16', 'pg-1-Name16', 'pg-1-Surname16'),
+    ('pg-1-user17', 'pg-1-Name17', 'pg-1-Surname17'),
+    ('pg-1-user18', 'pg-1-Name18', 'pg-1-Surname18'),
+    ('pg-1-user19', 'pg-1-Name19', 'pg-1-Surname19'),
+    ('pg-1-user20', 'pg-1-Name20', 'pg-1-Surname20'),
+    ('pg-1-user21', 'pg-1-Name21', 'pg-1-Surname21'),
+    ('pg-1-user22', 'pg-1-Name22', 'pg-1-Surname22'),
+    ('pg-1-user23', 'pg-1-Name23', 'pg-1-Surname23'),
+    ('pg-1-user24', 'pg-1-Name24', 'pg-1-Surname24'),
+    ('pg-1-user25', 'pg-1-Name25', 'pg-1-Surname25'),
+    ('pg-1-user26', 'pg-1-Name26', 'pg-1-Surname26'),
+    ('pg-1-user27', 'pg-1-Name27', 'pg-1-Surname27'),
+    ('pg-1-user28', 'pg-1-Name28', 'pg-1-Surname28'),
+    ('pg-1-user29', 'pg-1-Name29', 'pg-1-Surname29'),
+    ('pg-1-user30', 'pg-1-Name30', 'pg-1-Surname30'),
+    ('pg-1-user31', 'pg-1-Name31', 'pg-1-Surname31'),
+    ('pg-1-user32', 'pg-1-Name32', 'pg-1-Surname32'),
+    ('pg-1-user33', 'pg-1-Name33', 'pg-1-Surname33'),
+    ('pg-1-user34', 'pg-1-Name34', 'pg-1-Surname34'),
+    ('pg-1-user35', 'pg-1-Name35', 'pg-1-Surname35'),
+    ('pg-1-user36', 'pg-1-Name36', 'pg-1-Surname36'),
+    ('pg-1-user37', 'pg-1-Name37', 'pg-1-Surname37'),
+    ('pg-1-user38', 'pg-1-Name38', 'pg-1-Surname38'),
+    ('pg-1-user39', 'pg-1-Name39', 'pg-1-Surname39'),
+    ('pg-1-user40', 'pg-1-Name40', 'pg-1-Surname40'),
+    ('pg-1-user41', 'pg-1-Name41', 'pg-1-Surname41'),
+    ('pg-1-user42', 'pg-1-Name42', 'pg-1-Surname42'),
+    ('pg-1-user43', 'pg-1-Name43', 'pg-1-Surname43'),
+    ('pg-1-user44', 'pg-1-Name44', 'pg-1-Surname44'),
+    ('pg-1-user45', 'pg-1-Name45', 'pg-1-Surname45'),
+    ('pg-1-user46', 'pg-1-Name46', 'pg-1-Surname46'),
+    ('pg-1-user47', 'pg-1-Name47', 'pg-1-Surname47'),
+    ('pg-1-user48', 'pg-1-Name48', 'pg-1-Surname48'),
+    ('pg-1-user49', 'pg-1-Name49', 'pg-1-Surname49'),
+    ('elder', 'Endy', 'Siblingenko');
+
+COMMIT;
+
+
+

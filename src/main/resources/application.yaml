@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: client-service
+conf.data-sources:
+  - name: data-base-1
+    strategy: postgres # this property is optional, only if you implement multiple database types (Postgres, ORACLE, MySQL...)
+    url: jdbc://.....
+    table: users
+    user: testuser
+    password: testpass
+    mapping:
+      id: user_id
+      username: login
+      name: first_name
+      surname: last_name
+
+  - name: data-base-2
+    strategy: postgres
+    url: jdbc://.....
+    table: user_table
+    user: testuser
+    password: testpass
+    mapping:
+      id: ldap_login
+      username: ldap_login
+      name: name
+      surname: surname

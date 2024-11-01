@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: client-service
+conf.data-sources:
+  - name: postgres1
+    url: jdbc:postgresql://localhost:${test.db1.port}/postgres
+    user: testuser
+    password: testpass
+    table: users
+    mapping:
+      id: user_id
+      username: login
+      name: first_name
+      surname: last_name
+  - name: postgres2
+    strategy: postgres
+    url: jdbc:postgresql://localhost:${test.db2.port}/postgres
+    table: user_table
+    user: testuser
+    password: testpass
+    mapping:
+      id: ldap_login
+      username: ldap_login
+      name: name
+      surname: surname
