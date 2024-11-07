@@ -17,12 +17,12 @@ public class SimpleSqlGenerator implements SqlGenerator {
     private final Map<String, String> columnMapping;
 
     public SimpleSqlGenerator(UserMapping mapping, String tableName) {
+        Map<String, String> mappingMap = objectMapper.convertValue(mapping, new TypeReference<>() {
+        });
+
         this.sql = "SELECT " +
-                mapping.getId() + " as id," +
-                mapping.getUsername() + " as username," +
-                mapping.getName() + " as name," +
-                mapping.getSurname() + " as surname " +
-                "FROM " +
+                mappingMap.entrySet().stream().map(entry -> entry.getValue() + " as " + entry.getKey()).collect(Collectors.joining(",")) +
+                " FROM " +
                 tableName;
         this.columnMapping = objectMapper.convertValue(mapping, new TypeReference<>() {
         });
